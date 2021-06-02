@@ -13,5 +13,7 @@ número 7 do arquivo principal, "num_secreto = randint(1, 10)", quanto maior o r
 dificuldade.
 
 Espero que gostem do jogo.
+
 Forte abraço devs.
-GustavoDuran...
+
+At,te.,GustavoDuran...
