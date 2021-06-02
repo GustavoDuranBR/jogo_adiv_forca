@@ -4,6 +4,7 @@ Jogo de adivinhação
 Um jogo onde o usuário tenta adivinhar o nº que a máquina está "pensando".
 
 O jogo está dividido em dois arquivos.
+
 O arquivo Principa == alura_adivinhacao.py e o arquivo com
 duas funções simples, que seria o funcoes_do_jogo.py
 
