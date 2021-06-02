@@ -1,8 +1,8 @@
 from funcoes_do_jogo import *
 from random import randint
 
-acertou = False
-palpite = 0
+tentativas = 3
+
 
 num_secreto = randint(1, 10)
 
@@ -10,18 +10,21 @@ titulo()
 
 print('Vamos jogar?\nTente adivinhar o número que estou pensando.')
 
-while not acertou:
-    player = int(input('Digite o seu palpite: '))
-    palpite += 1
-    if player == num_secreto:
-        acertou = True
+for rodada in range(1, tentativas + 1):
+    print(f'Rodada {rodada} de {tentativas}')
+    palpite = int(input('Digite o seu palpite: '))
+    if palpite < 1 or palpite > 100:
+        print('Digite um número entre 1 e 100!')
+        continue
+
+    if palpite == num_secreto:
+        print(f'Parabéns...Você acertou.')
+        break
     else:
-        if player < num_secreto:
+        if palpite < num_secreto:
             print('O número que eu estou pensando é maior.')
         else:
             print('O número que eu estou pensando é menor.')
 
-print(f'Você acerto com {palpite} tentativas.')
 print(f'O número que eu pensei foi {num_secreto}')
-
 fim()
