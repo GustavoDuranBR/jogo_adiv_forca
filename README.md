@@ -1,4 +1,4 @@
-# jogo_adivinhacao
+# Jogo de adivinhação #
 Um jogo onde o usuário tenta adivinhar o nº que a máquina está "pensando".
 
 O jogo está dividido em dois arquivos.
