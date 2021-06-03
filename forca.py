@@ -10,5 +10,6 @@ def forca():
     print('Vamos jogar?\nElaborar frase do jogo FORCA.')
     fim()
 
+
 if __name__ == '__main__':
     forca()
