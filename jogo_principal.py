@@ -4,7 +4,7 @@ from funcoes_do_jogo import *
 
 titulo_principal()
 
-jogo = int(input('Qual jogo?'))
+jogo = int(input('Qual jogo?\n(1) ou (2): '))
 
 if jogo == 1:
     print('*** Jogando Adivinhação ***')
