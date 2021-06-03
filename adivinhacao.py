@@ -5,7 +5,6 @@ from random import randint
 def advinhacao():
     tentativas = 3
 
-
     num_secreto = randint(1, 10)
 
     titulo_adv()
