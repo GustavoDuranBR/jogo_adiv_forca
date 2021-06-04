@@ -12,5 +12,3 @@ if jogo == 1:
 elif jogo == 2:
     print('*** Jogando Forca ***')
     forca.forca()
-
-
