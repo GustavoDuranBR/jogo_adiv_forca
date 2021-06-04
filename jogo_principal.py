@@ -1,5 +1,5 @@
 import adivinhacao
-from Python_Inicio.Jogo_Adivinhacao import forca
+from Python_Inicio.jogos import forca
 from funcoes_do_jogo import *
 
 titulo_principal()
