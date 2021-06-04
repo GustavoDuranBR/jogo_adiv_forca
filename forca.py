@@ -13,6 +13,7 @@ def forca():
     print(letras_acertadas)
     print('Vamos jogar?\nElaborar frase do jogo FORCA.')
 
+
     while not enforcou and not acertou:
         chute = input('Qual letra?\nDigite aqui: ').strip().upper()  # .strip() elimina os espaços entre caracteres
 
