@@ -1,6 +1,4 @@
 from funcoes_do_jogo import *
-from random import randint
-
 
 def forca():
     titulo_frc()
@@ -25,16 +23,17 @@ def forca():
                 index += 1
         else:
             erros += 1
+            desenha_forca(erros)
+
 
         enforcou = erros == 6
         acertou = "_" not in letras_acertadas
         print(letras_acertadas)
 
-
-    if acertou:
-        print('Parabéns! Você ganhou.')
+    if (acertou):
+        imprime_vencedor()
     else:
-        print('Você perdeu.')
+        imprime_perdedor(palavra_secreta)
     fim()
 
 

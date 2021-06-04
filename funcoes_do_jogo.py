@@ -1,5 +1,6 @@
 import random
 
+
 def titulo_adv():
     titulo = 'Bem vindo ao jogo de Adivinhação!'
     print('=' * 40)
