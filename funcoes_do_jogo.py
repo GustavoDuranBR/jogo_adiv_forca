@@ -31,8 +31,8 @@ def titulo_frc():
     return titulo
 
 
-def carrega_palavra_secreta(primeira_linha_valida=0, nome_arquivo='palavras.txt'):
-    arquivo = open(nome_arquivo, 'r')
+def carrega_palavra_secreta():
+    arquivo = open("palavras.txt", "r")
     palavras = []
 
     for linha in arquivo:
@@ -41,7 +41,7 @@ def carrega_palavra_secreta(primeira_linha_valida=0, nome_arquivo='palavras.txt'
 
     arquivo.close()
 
-    numero = random.randrange(primeira_linha_valida, len(palavras))
+    numero = random.randrange(0, len(palavras))
     palavra_secreta = palavras[numero].upper()
 
     return palavra_secreta
