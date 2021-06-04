@@ -1,9 +1,10 @@
 from funcoes_do_jogo import *
 
+
 def forca():
     titulo_frc()
-    palavra_secreta = 'banana'.upper()
-    letras_acertadas = ['_' for letra in palavra_secreta]
+    palavra_secreta = carrega_palavra_secreta()
+    letras_acertadas = inicializa_letras_acertadas(palavra_secreta)
 
     enforcou = False
     acertou = False
@@ -25,12 +26,11 @@ def forca():
             erros += 1
             desenha_forca(erros)
 
-
         enforcou = erros == 6
         acertou = "_" not in letras_acertadas
         print(letras_acertadas)
 
-    if (acertou):
+    if acertou:
         imprime_vencedor()
     else:
         imprime_perdedor(palavra_secreta)
